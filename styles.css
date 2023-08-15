@@ -1,0 +1,146 @@
+*{
+    font-family: "overpass";
+}
+body{
+    width: 1440px;
+    background-color: black;
+    color:white;
+}
+    
+#box1{
+    margin-top: 100px;
+    margin-left: 450px;
+    display:block;
+    width: 350px;
+    height: 325px;
+    text-align: left;
+    background-color: hsl(216, 12%, 8%) ;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#box1 h1{
+    font-size: 25px;
+}
+#box1 p{
+    color: hsl(217, 12%, 63%);
+}
+#rating{
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    }
+#rating button{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color:hsl(213, 19%, 18%) ;
+    line-height: 40px;
+    border-style: none;
+    cursor: pointer;
+    color:hsl(217, 12%, 63%);
+}
+
+#rating button:hover{
+    background-color: hsl(216, 12%, 54%);
+    color:white;
+}
+
+#rating button.active{
+    background-color:hsl(25, 97%, 53%); ;
+}
+
+#star_bubble{
+    background-color:hsl(213, 19%, 18%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#star_bubble img{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    margin: auto;
+}
+
+#btn{
+    text-align: center;
+    margin-top: 40px;
+    width: 320px;
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+    border-style: none;
+    height: 30px;
+}
+
+#btn:active{
+    background-color: white;
+    color:hsl(25, 97%, 53%);
+}
+
+#thank{
+    display:none;
+    margin-top: 100px;
+    margin-left: 450px;
+    width: 350px;
+    height: 325px;
+    text-align: center;
+    background-color: hsl(216, 12%, 8%) ;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#thank img{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#thank h1{
+    font-size: 25px;
+}
+
+#thank p{
+    color:hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+#ratingbox{
+    background-color: hsl(213, 19%, 18%);
+    text-align: center;
+    border-radius: 15px;
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    line-height: 30px;
+};
+
+@media (max-width: 760px) {
+    body{
+        width: 375px;
+        margin-top: 50px;
+    }
+    #box1, #thank {
+        margin: 0;
+        border-radius: 0;
+        
+    }}
+
+@media (max-width: 760px) {
+    body{
+        width: 375px;
+        margin-top: 50px;
+    }
+    #box1, #thank {
+        margin: 0;
+        border-radius: 0;
+        
+    }
+}
